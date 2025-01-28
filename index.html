@@ -9,21 +9,59 @@
 <body>
     <nav>
         <section>
-            <div>
+            <div class="my-card">
                 <h1>Estoy aprendiendo javascript</h1>
             </div>
-            <div>
+            <div class="my-card">
                 <p>Ahora mismo estoy practicando HTML, CSS y javascript</p>
                 <img src="" alt="">
             </div>
         </section>
     </nav>
     <main>
+    <div class="my-card">
         <button>
            <i class="ri-alert-fill"></i> hello world
         </button>
         <input type="text" placeholder="ingresa" type="email" required>
+    </div>
+    <div>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            your browser does not support the audio element
+        </audio>
+    </div>
+    <div class="my-card">
+        <video controls>
+            <source src="video.mp4" type="video/mp4"> <!--Purpose: Specifies multiple media resources for <audio> or <video> elements-->
+            your browser does not support the video tag
+            <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English"></track> <!-- Purpose: Specifies text tracks for <video> and <audio> elementes (e.g., subtitles, captions)-->
+        </video>
+    </div>
+    <div class="my-card">
+    </div>
+    <div>
+        <picture> <!--Purpose: es un contenedor de uno o mas <source> elementos e imagenes <img> con diferentes versiones de imagen-->
+            <source srcset="image.webp" type="image/webp">
+            <source srcset="image.jpg" type="image/jpeg">
+            <img src="image.jpg" alt="Descripcion de la imagen">
+        </picture><!-- Purpose: Embeds multimedia files, such as images, PDFs, flash content, etc.-->
+    </div>
+
+    <div class="my-card">
+        <fieldset>
+            <object data="movie.swf" type="application/x-shockwave-flash">
+                <param name="movie" value="movie.swf"> <!--Purpose: Specifies parameters for plugins in the <object> element-->
+                    <embed src="file.swf" type="swf">
+                </object>
+         </fieldset>
+    </div>
+
+    <div>
+        <canvas id="myCanvas" width="200" height="100"></canvas> <!--Used to draw graphics, on the fly, via JavaScript -->
+    </div>
     </main>
+
     <script src="for-loop.js"></script>
 </body>
 </html>
